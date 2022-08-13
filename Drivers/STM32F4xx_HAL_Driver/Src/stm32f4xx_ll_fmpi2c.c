@@ -212,6 +212,12 @@ void LL_FMPI2C_StructInit(LL_FMPI2C_InitTypeDef *FMPI2C_InitStruct)
 /**
   * @}
   */
+#else
+
+/* Prevent empty translation unit when no FMPI2C exists.
+ * "error: ISO C forbids an empty translation unit [-Werror=pedantic]"
+ */
+void Empty_STM32F4xx_II_FMPI2C_C(void) {;}
 
 #endif /* FMPI2C_CR1_PE */
 #endif /* USE_FULL_LL_DRIVER */
