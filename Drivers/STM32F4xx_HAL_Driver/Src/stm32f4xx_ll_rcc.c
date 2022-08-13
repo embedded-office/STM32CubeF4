@@ -751,6 +751,9 @@ uint32_t LL_RCC_GetSDIOClockFreq(uint32_t SDIOxSource)
   */
 uint32_t LL_RCC_GetRNGClockFreq(uint32_t RNGxSource)
 {
+  /* Prevent unused argument(s) compilation warning */
+  UNUSED(RNGxSource);
+
   uint32_t rng_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
 
   /* Check parameter */
@@ -846,6 +849,9 @@ uint32_t LL_RCC_GetCECClockFreq(uint32_t CECxSource)
   */
 uint32_t LL_RCC_GetUSBClockFreq(uint32_t USBxSource)
 {
+  /* Prevent unused argument(s) compilation warning */
+  UNUSED(USBxSource);
+
   uint32_t usb_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
 
   /* Check parameter */
@@ -1047,6 +1053,9 @@ uint32_t LL_RCC_GetDSIClockFreq(uint32_t DSIxSource)
   */
 uint32_t LL_RCC_GetLTDCClockFreq(uint32_t LTDCxSource)
 {
+  /* Prevent unused argument(s) compilation warning */
+  UNUSED(LTDCxSource);
+
   uint32_t ltdc_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
 
   /* Check parameter */

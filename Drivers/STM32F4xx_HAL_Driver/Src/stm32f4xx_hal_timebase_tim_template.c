@@ -154,6 +154,9 @@ void HAL_ResumeTick(void)
   */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
+  /* Prevent unused argument(s) compilation warning */
+  UNUSED(htim);
+
   HAL_IncTick();
 }
 
